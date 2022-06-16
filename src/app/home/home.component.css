@@ -1,8 +1,14 @@
 div.container {
   padding: 20px;
-  width: 30vw;
 }
 
 div.main {
   display: flex;
+}
+
+h1 {
+  background-color: #1b6fec;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
 }

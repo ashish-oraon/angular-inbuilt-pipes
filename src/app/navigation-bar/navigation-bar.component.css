@@ -1,0 +1,40 @@
+.navigation-bar {
+  background-color: blue;
+  padding: 10px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all linear 2s;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.navigation-bar a.active {
+  background-color: #0f0f0f;
+}
+.menu-icon {
+  float: right;
+  margin-right: 45px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.menu-icon::before {
+  content: ' ';
+  border-top: 2px solid white;
+  width: 20px;
+  position: absolute;
+  top: 22px;
+  right: 50px;
+}
+.menu-icon::after {
+  content: ' ';
+  border-top: 2px solid white;
+  width: 20px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}

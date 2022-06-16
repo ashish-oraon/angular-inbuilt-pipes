@@ -1,0 +1,41 @@
+<h1>Inbuilt Pipes</h1>
+<div class="main">
+  <div class="container">
+    <h2>Lowercase pipe</h2>
+    <p>Output : {{ upperCaseString | lowercase }}</p>
+  </div>
+
+  <div class="container">
+    <h2>Uppercase pipe</h2>
+    <p>Output : {{ lowerCaseString | uppercase }}</p>
+  </div>
+
+  <div class="container">
+    <h2>Titlecase pipe</h2>
+    <p>Output : {{ lowerCaseString | titlecase }}</p>
+  </div>
+
+  <div class="container">
+    <h2>Date pipe</h2>
+    <p>Netaji's Birthdate: {{ netajiBirthday | date: 'dd MMMM yyyy' }}</p>
+  </div>
+
+  <div class="container">
+    <h2>i18nSelect pipe</h2>
+    <p>Should we invite Jim({{ gender }})?</p>
+    <p>Piped Output: {{ gender | i18nSelect: inviteMap }}</p>
+  </div>
+
+  <div class="container">
+    <h2>keyvalue pipe</h2>
+    <p *ngFor="let item of object | keyvalue">
+      {{ item.key }}:{{ item.value }}
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>percent pipe</h2>
+    <p>{{ a | percent: '1.4-5' }}</p>
+    <p>{{ b | percent: '3.2-5' }}</p>
+  </div>
+</div>

@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() {}
+  // lower/upper/title case
+  lowerCaseString = `it's all in the game`;
+  upperCaseString = `SHUT OUT`;
+
+  //date pipe
+  netajiBirthday = new Date('01/23/1897');
 
   //i18nSelect Pipe
   gender: string = 'male';
